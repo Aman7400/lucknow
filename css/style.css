@@ -26,8 +26,9 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .navbar-brand{
-    font-size:2.5vw;
+    font-size:2vw;
     margin-left: 100px;
+    margin-right: 10px;
     font-weight: 400;
     /* color: white; */
     /* text-shadow: 2px 2px 4px black; */
@@ -87,7 +88,7 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
 /* Discover Section */
 
 #Discover{
-    margin-top: 10vh;   height: 90vh;
+    padding-top: 20vh;   height: 90vh;
 
     display: flex;
     flex-direction: column;
@@ -104,7 +105,7 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
 }
 #discover-heading{
 
-padding: 10vh;
+
     font-family: "Ubuntu",sans-serif;
     font-size: 3vw;
 
@@ -244,6 +245,9 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
     
    
 }
+.experiences-card:hover {
+    text-decoration: none;
+}
 .experiences-card-h2 a{
     color: black;
     font-size: 2vw;
@@ -273,6 +277,44 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
     font-weight: bold;
     font-family: "Ubuntu";
     color: gray;
+}
+
+/* Footer */
+#Contact{
+    padding:20vh;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    flex-direction: column;
+  
+}
+.contact {
+    margin-bottom: 10px;
+
+    font-family: "Ubuntu";
+}
+.fa{
+    margin: 5px;
+    margin-bottom: 20px;
+    color: black;
+    text-shadow: 2px 2px 4px solid gray;
+    transition: transform 0.5s ease-in-out;
+}
+.fa:hover{
+    transform: scale(1.3);
+    color: gray;
+    text-decoration: none;
+}
+.contact-credit{
+    font-size: larger;
+    border-bottom: 2px solid black;
+}
+.contact-credit h1{
+   font-family:"Kaushan Script";
+   font-size: larger; 
+ color: gray;
+ text-shadow: 2px 2px 4px solid black; 
 }
 
 
