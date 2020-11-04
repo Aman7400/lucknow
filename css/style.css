@@ -104,7 +104,7 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
 }
 #discover-heading{
 
-
+padding: 10vh;
     font-family: "Ubuntu",sans-serif;
     font-size: 3vw;
 
@@ -140,29 +140,29 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
     /* flex-direction: row; */
 
 }
-.card{
+.explore-card{
     margin: 10px 10px;
     width: 20rem;
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: transform 0.8s ease-in-out;
 }
-.card:hover{
+.explore-card:hover{
     transform: scale(1.1);}
    
   
-    .card-title{
+  .explore-card  .card-title{
         font-family: "Ubuntu";
         font-weight: 800;
         padding-bottom: 5px;
         /* text-shadow: 1px 1px 1px gray; */
         /* border-bottom: 3px solid  #b8ff7d */
     }
-    .card-text{
+  .explore-card  .card-text{
         color: gray;
         font-family: "Ubuntu";
     }
-    .card a { 
+  .explore-card  .card a { 
         color: #784BA0;
         font-weight: 400;
         text-shadow: 1px 1px 2px #784BA0;
@@ -188,7 +188,6 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
 }
 
 
-/* Experiences */
     .control-icon{
         /* border:2px solid black; */
         font-size: 5rem;
@@ -197,6 +196,87 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
     z-index: 1;
     text-shadow: 2px 2px 4px #FBDA61;
     }
+
+
+
+/* Experiences */
+
+#Experiences{
+    padding: 15vh;
+    padding-top: 20vh;
+ 
+    min-height: 100vh;
+    height:fit-content;
+    background-color: #fdff85;
+    background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
+    display: flex;
+    justify-content: center;
+}
+.experiences-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.experiences-heading h1{
+    -webkit-text-fill-color: black;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 4px gray;
+    font-family: "Kaushan Script",cursive;
+    font-size: 4rem;
+    /* border-bottom: 5px solid whitesmoke; */
+}
+.experiences-heading h3{
+   -webkit-text-fill-color: whitesmoke;
+  -webkit-background-clip: text;
+  text-shadow: 2px 2px 4px black;
+  font-family: "Kaushan Script",cursive;
+  font-size: 2rem;
+}
+
+
+.experiences-section{
+    width: 60vw;
+}
+.experiences-card{
+    background-color:#b8ff7d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    
+   
+}
+.experiences-card-h2 a{
+    color: black;
+    font-size: 2vw;
+    font-family:"Kaushan Script",cursive ;
+   text-decoration: none;
+   
+}
+
+
+
+.experiences-card-body{
+    display: flex;
+    justify-content: space-around;
+    background: whitesmoke;
+}
+.experiences-card-body div img{
+    margin: 10px;
+    padding: 5px;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.experiences-card-p{
+    margin: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: large;
+    font-weight: bold;
+    font-family: "Ubuntu";
+    color: gray;
+}
+
+
+
 /* Media Queries */
 
 @media screen and (max-width:1000px){
@@ -208,6 +288,10 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
         }
         .discover-cards{
             flex-direction: column;
+        }
+        .experiences-card-body{
+            flex-direction: column;
+            justify-content: center;
         }
       
     }
@@ -228,4 +312,13 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
         #title p{
             font-size: 5vh;
         }
+        #Experiences{
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .experiences-card-body{
+            flex-direction: column;
+            justify-content: center;
+        }
+        
     }
