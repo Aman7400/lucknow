@@ -18,10 +18,10 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
     /* background-image: url("../images/Untitled\ design.svg"); */
 
 
- background-color: whitesmoke;
+ /* background-color: whitesmoke; */
    /* /* background-color: #FBDA61; */
     /* background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%); */
-   */
+
     z-index: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -30,14 +30,28 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
     margin-left: 100px;
     margin-right: 10px;
     font-weight: 400;
-    /* color: white; */
-    /* text-shadow: 2px 2px 4px black; */
+   
 }
 .navbar-nav{
     margin-right: 100px;
 }
 .nav-link{
     font-size: 1.5vw;}
+
+    /* SignUp / Subscribe Modal */
+
+    .modal-header{
+        background-color:lightgreen;
+    }
+    .modal-title{
+        font-family: "Kaushan Script",cursive;
+        font-size: 2rem;
+        color: white;
+        text-shadow: 2px 2px 4px gray;
+    }
+    .modal-body form{
+        font-family: "Ubuntu";
+    }
 
 
 
@@ -88,7 +102,7 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
 /* Discover Section */
 
 #Discover{
-    padding-top: 20vh;   height: 90vh;
+    padding-top: 35vh;   height: 90vh;
 
     display: flex;
     flex-direction: column;
@@ -119,8 +133,9 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
 
 
 .carousel{
-    height: 70vh;
+    height: 90vh;
     width: 80vw;
+    
 }
 .carousel-item{
     padding: 20px 150px;
@@ -170,7 +185,10 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
         text-decoration: none;
 
     }
-
+.card-img-top{
+    width: 100%;
+    height:12rem;
+}
 
     .carousel-inner{
         width: 100%;
@@ -273,7 +291,7 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
     margin: 10px;
     padding: 10px;
     padding-left: 30px;
-    font-size: large;
+    font-size: larger;
     font-weight: bold;
     font-family: "Ubuntu";
     color: gray;
@@ -303,7 +321,7 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
 }
 .fa:hover{
     transform: scale(1.3);
-    color: gray;
+    color:green;
     text-decoration: none;
 }
 .contact-credit{
@@ -313,7 +331,7 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
 .contact-credit h1{
    font-family:"Kaushan Script";
    font-size: larger; 
- color: gray;
+ color:black;
  text-shadow: 2px 2px 4px solid black; 
 }
 
@@ -335,6 +353,7 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
             flex-direction: column;
             justify-content: center;
         }
+       
       
     }
 
@@ -361,6 +380,13 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
         .experiences-card-body{
             flex-direction: column;
             justify-content: center;
+        }
+        #Contact{
+height: fit-content;
+padding: 5vh;
+        }
+        .explore-card .card-body{
+            display: none;
         }
         
     }

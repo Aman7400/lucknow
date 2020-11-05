@@ -29,7 +29,8 @@
         <!-- Navbar -->
 
         <nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top">
-            <a class="navbar-brand" href="#">Lucknow  <span ><i class="far fa-heart animate__animated animate__heartBeat animate__infinite infinite"></i></i></span></a>
+            <a style=" color: white;
+            text-shadow: 2px 2px 4px black;" class="navbar-brand" href="#"> <span ><i style="font-size: larger;" class="fas fa-mosque  animate__animated animate__fadeInDown"></i></i></span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -50,10 +51,10 @@
                     Travel
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">About Lucknow</a>
-                    <a class="dropdown-item" href="#">Visa</a>
+                    <a class="dropdown-item" href="./about.html">About Lucknow</a>
+                    <a class="dropdown-item" href="#">Blogs</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Currency</a>
+                    <a class="dropdown-item" href="mailto:amanks7400@gmail.com">Contact us</a>
                   </div>
                 </li>
                
@@ -61,6 +62,41 @@
              
             </div>
           </nav>
+
+          <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="subscribeLabel">Subscibe Our Newsletter</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form method="POST" action="./index.html">
+
+                    <div class="form-group">
+                      <input type="text" placeholder="Enter Your Name" class="form-control" name="name" id="">
+        
+                    </div>
+                    <div class="form-group">
+                      <input type="email" placeholder="Enter Your Email" class="form-control" name="email" id="">
+        
+                    </div>
+                    <div class="form-group">
+                      <input type="tel" placeholder="Enter Your Mobile No" class="form-control" name="email" id="">
+        
+                    </div>
+
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="reset" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                  <button type="submit"  id="subscribeBtn" class="btn btn-outline-success">Subscibe</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
           <!-- Landing Section -->
@@ -101,28 +137,28 @@
               <div class="carousel-item active">
                 <div class="slide">
                 <div class="card explore-card" style="width: 18rem;">
-                    <img class="card-img-top" src="./images/landing.png" alt="Card image cap">
+                    <img class="card-img-top" src="./images/Rumi-darwaza.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="./exlpore.html" class="btn card-btn ">See More...</a>
+                      <h5 class="card-title">Rumi Darwaza</h5>
+                      <p class="card-text">The 60 feet high Rumi Gate was constructed during the reign of Nawab Asaf-ud-Daula in 1784-86.</p>
+                      <a href="./cities.html" class="btn btn-outline-success card-btn ">Know More</a>
                     </div>
                   </div>
                   <div class="card explore-card" style="width: 18rem;">
-                    <img class="card-img-top" src="./images/landing.png" alt="Card image cap">
+                    <img class="card-img-top" src="./images/bada-imambara-5548281_1920.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="./exlpore.html" class="btn card-btn ">See More...</a>
+                      <h5 class="card-title">Bara Imambara</h5>
+                      <p class="card-text">This large structure was built by Nawab Asaf-ud-Daula in 1786-91 and is one of the architectural wonders of that era.</p>
+                      <a href="./cities.html" class="btn btn-outline-success card-btn ">Know More</a>
 
                     </div>
                   </div>
                   <div class="card explore-card " style="width: 18rem;">
-                    <img class="card-img-top" src="./images/landing.png" alt="Card image cap">
+                    <img class="card-img-top" src="./images/chotimam.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="./exlpore.html" class="btn card-btn ">See More...</a>
+                      <h5 class="card-title">Chotta Imambara</h5>
+                      <p class="card-text">A golden dome with fine calligraphy makes it a truly exceptional monument of Mughal architecture. </p>
+                      <a href="./cities.html" class="btn btn-outline-success card-btn ">Know More</a>
 
                     </div>
                     </div>
@@ -136,29 +172,29 @@
 
                 <div class="slide">
                     <div class="card explore-card" style="width: 18rem;">
-                        <img class="card-img-top" src="./images/landing2.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="./images/Husainabad-Clock-Tower.jpg" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="./exlpore.html" class="btn card-btn ">See More...</a>
+                          <h5 class="card-title">Clock Tower</h5>
+                          <p class="card-text">This 221 ft. high Clock Tower  built in 1881 to mark the arrival of Sir George Couper, the first Lieutenant Governor of  Awadh.</p>
+                          <a href="./cities.html" class="btn btn-outline-success card-btn ">Know More</a>
 
                         </div>
                       </div>
                       <div class="card explore-card" style="width: 18rem;">
-                        <img class="card-img-top" src="./images/landing2.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="./images/residency-lucknow.jpg" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="./exlpore.html" class="btn card-btn ">See More...</a>
+                          <h5 class="card-title">Residency</h5>
+                          <p class="card-text">Built for the British Resident during the rule of Nawab Saadat Ali Khan in 1780-1800,</p>
+                          <a href="./cities.html" class="btn btn-outline-success card-btn ">Know More</a>
 
                         </div>
                       </div>
                       <div class="card explore-card" style="width: 18rem;">
-                        <img class="card-img-top" src="./images/landing2.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="./images/dewa-sharif-lucknow.jpg" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="./exlpore.html" class="btn card-btn ">See More...</a>
+                          <h5 class="card-title">Dewa Sharif</h5>
+                          <p class="card-text"> Its a religious place which enshrines the tomb of Syed Haji Waris Ali Shah.</p>
+                          <a href="./cities.html" class="btn  btn-outline-success card-btn ">Know More</a>
 
                         </div>
                     
@@ -176,36 +212,37 @@
               <!-- Third Slide -->
 
 
-              <div class="carousel-item">
+              <div class="  carousel-item ">
 
 
 
                 <div class="slide">
                     <div class="card explore-card" style="width: 18rem;">
-                        <img class="card-img-top" src="./images/landing2.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="./images/sabri.jpg" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="./exlpore.html" class="btn card-btn ">See More...</a>
+                          <h5 class="card-title">Dargah-E-Sabri</h5>
+                          <p class="card-text">Dargah-E-Sabri is the birth place of Hazrat Khwaja Sufi Sabir Mohammed Zakaria Shah Hasni . </p>
+                          <a href="./cities.html" class="btn btn-outline-success card-btn ">Know More</a>
 
                         </div>
                       </div>
                       <div class="card explore-card" style="width: 18rem;">
-                        <img class="card-img-top" src="./images/landing2.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="./images/igplaneterium.jpg" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="./exlpore.html" class="btn card-btn ">See More...</a>
+                          <h5 class="card-title">Indira Gandhi Planetarium</h5>
+                          <p class="card-text">Situated at Suraj kund Park, it is a novel attraction of the city. The Saturn shaped building of the planetarium is unique of its kind.</p>
+                          <a href="./cities.html" class="btn btn-outline-success card-btn ">Know More</a>
 
                         </div>
                       </div>
                       <div class="card explore-card" style="width: 18rem;">
-                        <img class="card-img-top" src="./images/landing2.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="./images/kukrail-picnic3.jpg" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="./exlpore.html" class="btn card-btn ">See More...</a>
-
+                          <h5 class="card-title">Kukrail Reserve Forest</h5>
+                          <p class="card-text">
+                            One of the favourite picnic spots in Lucknow, it consist of a Children's Park, Cafeteria and Rest House.
+                          </p>
+                          <a href="./cities.html" class="btn btn-outline-success card-btn ">Know More</a>
                         </div>
                     
 
@@ -256,32 +293,34 @@
 
         <div class="container-fluid" id="Experiences">
 
-            <div class="experiences-heading">
+            <div class="experiences-heading wow animate__animated animate__fadeInLeft animate__slow">
                 <h1>Enticing Experiences,</h1><br>
                 <h3>In the City of plenitude,<br> let loose and discover yourself !!</h3>
 
             </div>
-            <div class="experiences-section">
+            <div class="experiences-section  ">
 
 
               <div class="accordion" id="accordionExample">
                 <div class="card experiences-card">
                   <div class="card-header" id="art">
                     <h2 class="mb-0 experiences-card-h2">
-                      <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#artContent" aria-expanded="true" aria-controls="collapseOne">
-                        Art & Culture
+                      <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#shopContent" aria-expanded="true" aria-controls="collapseOne">
+                        Shopping
                     </a>
                     </h2>
                   </div>
               
-                  <div id="artContent" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body experiences-card-body">
+                  <div id="shopContent" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body experiences-card-body wow animate__animated animate__fadeInUp">
 
                       <div>
-                        <img src="./images/lko.jpg" width="100%" height="auto" alt="">
+                        <img src="./images/shop.jpg" width="100%" height="auto" alt="">
                       </div>
                       <div>
-                        <p class="experiences-card-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa eius earum iure sunt, eos perferendis. Odio consequatur excepturi, alias necessitatibus inventore neque tenetur esse nostrum ipsa nulla molestias, aliquam natus?
+                        <p class="experiences-card-p">
+                          Lucknow is known for its sarees, chikan embroidery, zari work, handicraft, leather purses and hand crafted shoes, soft toys, sweets and namkeen.
+                           In addition to their epicurean excellence (biryanis, kebabs, and whatnot), they always took pride in their textiles and handicrafts .
                      
                         <br>
                         
@@ -304,13 +343,16 @@
                     </h2>
                   </div>
                   <div id="heritageContent" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body experiences-card-body">
+                    <div class="card-body experiences-card-body ">
 
                       <div>
-                        <img src="./images/lko.jpg" width="100%" height="auto" alt="">
+                        <img src="./images/heritage.jpg" width="100%" height="auto" alt="">
                       </div>
                       <div>
-                        <p class="experiences-card-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa eius earum iure sunt, eos perferendis. Odio consequatur excepturi, alias necessitatibus inventore neque tenetur esse nostrum ipsa nulla molestias, aliquam natus?<br>
+                        <p class="experiences-card-p">
+                          Explore Lucknow’s golden past by visiting these fascinating heritage sites and monuments in the city. One of the most famous historical attractions here is the Bada Imambara. 
+                         . Built in the 19th century, The Residency 
+                         adds to the architectural grandeur of the city.   <br>
                         
                           <a href="./exlpore.html" role="button" class="btn btn-outline-success mt-3">Read More</a>
 
@@ -329,14 +371,16 @@
                     </h2>
                   </div>
                   <div id="spiritualContent" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body experiences-card-body">
+                    <div class="card-body experiences-card-body ">
 
                       <div>
-                        <img src="./images/lko.jpg" width="100%" height="auto" alt="">
+                        <img src="./images/spiritual.jpg" width="100%" height="auto" alt="">
                       </div>
                       <div >
-                        <p class="experiences-card-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa eius earum iure sunt, eos perferendis. Odio consequatur excepturi, alias necessitatibus inventore neque tenetur esse nostrum ipsa nulla molestias, aliquam natus?
-                        <br>
+                        <p class="experiences-card-p">
+                          
+                          Lucknow, the capital city of Uttar Pradesh has some of the best Shia Islamic architecture.  Ramakrishna Math temple, Koneshwar Mahadev, Aliganj Hanuman temples, Kalibari temple, Chandrika Devi temple and Mankameshwar temples are places of celebration. 
+                          <br>
                         
                           <a href="./exlpore.html" role="button" class="btn btn-outline-success mt-3">Read More</a></p>
 
@@ -354,14 +398,16 @@
                     </h2>
                   </div>
                   <div id="foodContent" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body experiences-card-body">
+                    <div class="card-body experiences-card-body ">
 
                       <div>
-                        <img src="./images/lko.jpg" width="100%" height="auto" alt="">
+                        <img src="./images/cuisine.jpg" width="100%" height="auto" alt="">
                       </div>
                       <div>
-                        <p class="experiences-card-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa eius earum iure sunt, eos perferendis. Odio consequatur excepturi, alias necessitatibus inventore neque tenetur esse nostrum ipsa nulla molestias, aliquam natus?
-                        <br>
+                        <p class="experiences-card-p">
+                          The cuisine of Lucknow has its own distinct individuality and identity. The traditional food of Lucknow was highly patronized by the Mughals thus giving it a very royal touch.
+                          The most famous of all dishes are the Kebabs or the meatballs that come in different varieties.
+                          <br>
                         
                         <a href="./exlpore.html" role="button" class="btn btn-outline-success mt-3">Read More</a> </p>
 
@@ -382,18 +428,18 @@
 
         <div class="container-fluid" id="Contact">
 
-          <div class="contact">
-            <h4>For regular updates & happenings in Lucknow <a class="btn btn-success" href="">Subscribe Us</a></h4>
+          <div class="contact wow animate__animated animate__fadeInUp ">
+            <h4>For regular updates & happenings in Lucknow <a class="btn btn-success" data-toggle="modal" data-target="#signUpModal" href="">Subscribe Us</a></h4>
           </div>
           
-         <div class="social-icons">
+         <div class=" social-icons wow animate__animated animate__fadeInUp ">
            <a class="social-icons-link" href=""><i class="fa fa-facebook fa-2x"></i></a>
            <a class="social-icons-link" href=""><i class="fa fa-instagram fa-2x"></i></a>
            <a class="social-icons-link" href=""><i class="fa fa-twitter fa-2x"></i></a>
          </div>
 
-         <div class="contact-credit">
-           <h1>Made with <span><i class="fas fa-heart animate__animated animate__heartBeat animate__infinite infinite"></i></i></span> by Aman</h1>
+         <div class="contact-credit wow animate__animated animate__fadeInUp ">
+           <h1>Made with <span><i style="margin: 5px; color: rgb(255, 0, 55);" class="fas fa-heart animate__animated animate__heartBeat animate__infinite infinite"></i></i></span> by Aman</h1>
          </div>
 
 
@@ -410,7 +456,11 @@
 
 
 
-
+    <script src="./js/wow.min.js"></script>
+    <script>
+      
+      new WOW().init();
+    </script>
    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

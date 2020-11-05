@@ -6,5 +6,8 @@ new TypeIt("#title-h1", {
     cursor:false
   }).go();
 
+// Wow JS
+
+
 
  
