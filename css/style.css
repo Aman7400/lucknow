@@ -22,9 +22,10 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
    /* /* background-color: #FBDA61; */
     /* background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%); */
 
-    z-index: 1;
+    z-index: 2;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .navbar-brand{
     font-size:2vw;
     margin-left: 100px;
@@ -212,7 +213,7 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
         font-size: 5rem;
     color: black;
     font-size: 6rem;
-    z-index: 1;
+    /* z-index: 1; */
     text-shadow: 2px 2px 4px #FBDA61;
     }
 
@@ -287,6 +288,12 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
     width: 90%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.exp-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .experiences-card-p{
     margin: 10px;
     padding: 10px;
@@ -353,6 +360,10 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
             flex-direction: column;
             justify-content: center;
         }
+        .experiences-card-p{
+            display: none;
+        }
+       
        
       
     }
@@ -381,6 +392,7 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
             flex-direction: column;
             justify-content: center;
         }
+        
         #Contact{
 height: fit-content;
 padding: 5vh;

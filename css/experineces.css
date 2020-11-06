@@ -1,0 +1,70 @@
+#experiences{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: fit-content;
+        flex-direction: column;
+}
+#art,#heritage,#spiritual,#food{
+    padding: 20vh;
+   padding-top: 12vh;
+   padding-bottom: 12vh;
+   
+
+height: 100vh;
+    /* height: fit-content; */
+
+}
+#heritage,#food {
+    background-color: #fdff85;
+    background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
+    
+}
+.gallery{
+    display: flex;
+
+    justify-content: center;
+}
+.heading-h1{
+
+    font-family: "Kaushan Script";
+}
+.desc{
+    font-family: "Ubuntu";
+    font-size: larger;
+}
+
+
+@media screen and (max-width:1000px)
+{
+   
+    #art,#heritage,#spiritual,#food{
+       
+        height: fit-content;
+    
+    }
+    #art .slide,#heritage .slide,#spiritual .slide,#food .slide{
+        flex-wrap: wrap;
+    }
+
+   
+    }
+
+@media screen and (max-width:768px)
+{
+    /* .desc{
+        display: none;
+    } */
+    .slide{
+        flex-direction: column;
+    }
+    #art,#heritage,#spiritual,#food{
+        padding: 5vh;
+        padding-top: 10vh;
+        height: fit-content;
+    }
+  
+
+}
+

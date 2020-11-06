@@ -37,8 +37,8 @@
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item ">
+                  <a class="nav-link active" href="#title-section">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#Discover">Discover</a>
@@ -101,7 +101,7 @@
 
           <!-- Landing Section -->
 
-          <div class="container-fluid title-section" >
+          <div class="container-fluid title-section" id="title-section" >
               <div id="title">
                   <h1 id="title-h1"></h1>
                   <p id="title-p">The City Of Nawabs</p>
@@ -272,11 +272,11 @@
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
               <!-- <span class="carousel-control-prev-icon control-icon" aria-hidden="true"></span> -->
               <span class="control-icon">&#8592;</span>
-              <span class="sr-only">Previous</span>
+              
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
               <!-- <span class="carousel-control-next-icon control-icon" aria-hidden="true"></span> -->
-              <span class="sr-only">Next</span>
+           
               <span class="control-icon">&#8594;</span>
             </a>
           </div>
@@ -305,8 +305,8 @@
                 <div class="card experiences-card">
                   <div class="card-header" id="art">
                     <h2 class="mb-0 experiences-card-h2">
-                      <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#shopContent" aria-expanded="true" aria-controls="collapseOne">
-                        Shopping
+                      <a class="btn " type="button" data-toggle="collapse" data-target="#shopContent" aria-expanded="true" aria-controls="collapseOne">
+                        Art & Culture
                     </a>
                     </h2>
                   </div>
@@ -324,9 +324,10 @@
                      
                         <br>
                         
-                          <a href="./exlpore.html"  role="button" class="btn btn-outline-success mt-3">Read More</a></p>
 
                       </div>
+                      <a href="./exlpore.html"  role="button" class="btn btn-outline-success mt-3">Read More</a></p>
+
 
                       </div>
                   </div>
@@ -335,7 +336,7 @@
                   <div class="card-header" id="heritage">
                     <h2 class="mb-0 experiences-card-h2">
                      
-                      <a class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#heritageContent" aria-expanded="false" aria-controls="collapseTwo">
+                      <a class="btn collapsed" type="button" data-toggle="collapse" data-target="#heritageContent" aria-expanded="false" aria-controls="collapseTwo">
                     
                         
                          Heritage
@@ -354,10 +355,11 @@
                          . Built in the 19th century, The Residency 
                          adds to the architectural grandeur of the city.   <br>
                         
-                          <a href="./exlpore.html" role="button" class="btn btn-outline-success mt-3">Read More</a>
 
                         </p>
                       </div>
+                      <a href="./exlpore.html" role="button" class="btn btn-outline-success mt-3">Read More</a>
+
 
                       </div>
                   </div>
@@ -365,7 +367,7 @@
                 <div class="card experiences-card">
                   <div class="card-header" id="spiritual">
                     <h2 class="mb-0 experiences-card-h2">
-                      <a class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#spiritualContent" aria-expanded="false" aria-controls="collapseTwo">
+                      <a class="btn  collapsed" type="button" data-toggle="collapse" data-target="#spiritualContent" aria-expanded="false" aria-controls="collapseTwo">
                         Spiritual
                       </a>
                     </h2>
@@ -382,9 +384,10 @@
                           Lucknow, the capital city of Uttar Pradesh has some of the best Shia Islamic architecture.  Ramakrishna Math temple, Koneshwar Mahadev, Aliganj Hanuman temples, Kalibari temple, Chandrika Devi temple and Mankameshwar temples are places of celebration. 
                           <br>
                         
-                          <a href="./exlpore.html" role="button" class="btn btn-outline-success mt-3">Read More</a></p>
 
                       </div>
+                      <a href="./exlpore.html" role="button" class="btn btn-outline-success mt-3">Read More</a></p>
+
 
                       </div>
                   </div>
@@ -392,27 +395,29 @@
                 <div class="card experiences-card">
                   <div class="card-header" id="food">
                     <h2  class="mb-0 experiences-card-h2">
-                      <a class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#foodContent" aria-expanded="false" aria-controls="collapseThree">
+                      <a class="btn  collapsed" type="button" data-toggle="collapse" data-target="#foodContent" aria-expanded="false" aria-controls="collapseThree">
                         Food & Cuisine
                       </a>
                     </h2>
                   </div>
                   <div id="foodContent" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body experiences-card-body ">
+                      
 
                       <div>
                         <img src="./images/cuisine.jpg" width="100%" height="auto" alt="">
                       </div>
-                      <div>
+                      <div >
                         <p class="experiences-card-p">
                           The cuisine of Lucknow has its own distinct individuality and identity. The traditional food of Lucknow was highly patronized by the Mughals thus giving it a very royal touch.
                           The most famous of all dishes are the Kebabs or the meatballs that come in different varieties.
                           <br>
                         
-                        <a href="./exlpore.html" role="button" class="btn btn-outline-success mt-3">Read More</a> </p>
 
 
                       </div>
+                      <a   href="./exlpore.html" role="button" class="btn btn-outline-success mt-3">Read More</a> </p>
+
 
                       </div>
                   </div>
@@ -454,7 +459,15 @@
 
 
 
-
+<script>
+  new TypeIt("#title-h1", {
+    strings: ["Lucknow"],
+    speed: 200,
+    waitUntilVisible: true,
+   
+    cursor:false
+  }).go();
+</script>
 
     <script src="./js/wow.min.js"></script>
     <script>

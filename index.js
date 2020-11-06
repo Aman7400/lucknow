@@ -1,12 +1,42 @@
-new TypeIt("#title-h1", {
-    strings: ["Lucknow"],
-    speed: 200,
-    waitUntilVisible: true,
-   
-    cursor:false
-  }).go();
+// active Class Js
 
-// Wow JS
+const items = document.querySelectorAll(".nav-link");
+
+items.forEach((item) => {
+
+
+    item.addEventListener("click",(event)=>{
+
+        items.forEach((remove_active_item)=>{
+
+            remove_active_item.classList.remove("active");
+
+        });
+
+        event.target.classList.add("active");
+
+    });
+
+    
+});
+
+
+// About Page JS
+
+var btn  = document.getElementById("readMoreAbout");
+btn.addEventListener("click",(e)=>{
+
+    if(btn.innerText === "Read More")
+    {
+        btn.innerText = "Read Less"
+    }
+    else if(btn.innerText === "Read Less"){
+        btn.innerText = "Read More"
+    }
+
+  
+
+});
 
 
 
