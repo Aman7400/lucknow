@@ -26,6 +26,9 @@ height: 100vh;
 
     justify-content: center;
 }
+.explore-slide{
+    display: flex;
+}
 .heading-h1{
 
     font-family: "Kaushan Script";
@@ -34,7 +37,16 @@ height: 100vh;
     font-family: "Ubuntu";
     font-size: larger;
 }
-
+#explore-contact{
+    padding:10vh;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    flex-direction: column;
+    background-color: white
+  
+}
 
 @media screen and (max-width:1000px)
 {
@@ -44,7 +56,7 @@ height: 100vh;
         height: fit-content;
     
     }
-    #art .slide,#heritage .slide,#spiritual .slide,#food .slide{
+    #art .explore-slide,#heritage .explore-slide,#spiritual .explore-slide,#food .explore-slide{
         flex-wrap: wrap;
     }
 
@@ -56,7 +68,7 @@ height: 100vh;
     /* .desc{
         display: none;
     } */
-    .slide{
+    .explore-slide{
         flex-direction: column;
     }
     #art,#heritage,#spiritual,#food{
