@@ -310,6 +310,7 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
     text-decoration: none;
 }
 .contact-credit{
+    text-align: center  ;
     font-size: larger;
     border-bottom: 2px solid black;
 }
@@ -319,6 +320,8 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
  color:black;
  text-shadow: 2px 2px 4px solid black; 
 }
+
+ 
 
 
 

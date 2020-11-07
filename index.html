@@ -31,7 +31,7 @@
 
         <nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top">
             <a style=" color: white;
-            text-shadow: 2px 2px 4px black;" class="navbar-brand" href="#"> <span ><i style="font-size: larger;" class="fas fa-mosque  animate__animated animate__fadeInDown"></i></i></span></a>
+            text-shadow: 2px 2px 4px black;" class="navbar-brand" href="#">  <span ><i style="font-size: larger;" class="fas fa-mosque  animate__animated animate__fadeInDown"></i></i></span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -64,40 +64,6 @@
             </div>
           </nav>
 
-          <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="subscribeLabel">Subscibe Our Newsletter</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <form method="POST" action="./index.html">
-
-                    <div class="form-group">
-                      <input type="text" placeholder="Enter Your Name" class="form-control" name="name" id="">
-        
-                    </div>
-                    <div class="form-group">
-                      <input type="email" placeholder="Enter Your Email" class="form-control" name="email" id="">
-        
-                    </div>
-                    <div class="form-group">
-                      <input type="tel" placeholder="Enter Your Mobile No" class="form-control" name="email" id="">
-        
-                    </div>
-
-                  </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="reset" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
-                  <button type="submit"  id="subscribeBtn" class="btn btn-outline-success">Subscibe</button>
-                </div>
-              </div>
-            </div>
-          </div>
 
 
           <!-- Landing Section -->
@@ -455,7 +421,7 @@
         <div class="container-fluid" id="Contact">
 
           <div class="contact wow animate__animated animate__fadeInUp ">
-            <h4>For regular updates & happenings in Lucknow <a class="btn btn-outline-success" data-toggle="modal" data-target="#signUpModal" href="">Subscribe Us</a></h4>
+            <h4>For regular updates & happenings in Lucknow <a class="btn btn-outline-success"  href="./signup.html">Subscribe Us</a></h4>
           </div>
           
          <div class=" social-icons wow animate__animated animate__fadeInUp ">
@@ -466,6 +432,7 @@
 
          <div class="contact-credit wow animate__animated animate__fadeInUp ">
            <h1>Made with <span><i style="margin: 5px; color: rgb(255, 0, 55);" class="fas fa-heart animate__animated animate__heartBeat animate__infinite infinite"></i></i></span> by Aman</h1>
+           <small>&copy;<span id="year"></span></small>
          </div>
 
 

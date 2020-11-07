@@ -1,3 +1,15 @@
+// Footer Date 
+
+var year = document.getElementById("year");
+var currentYear = new Date().getFullYear();
+year.innerHTML=currentYear;
+// alert(currentYear);
+console.log(currentYear);
+
+
+
+
+
 // active Class Js
 
 const items = document.querySelectorAll(".nav-link");
@@ -37,6 +49,47 @@ btn.addEventListener("click",(e)=>{
   
 
 });
+
+
+// Subscibe Us Validation
+
+function validateForm(){
+
+var name = document.forms["Subscribe"]["name"];
+var email = document.forms["Subscribe"]["email"];
+var phone = document.forms["Subscribe"]["mobile"];
+var phoneno = /^\d{10}$/;
+if(name.value == "")
+{
+    
+    alert("Please Check Your Name");
+    name.focus();
+  
+    return false;
+}
+if(email.value == "" || email.value == null || !(email.value.includes(".com"))|| !(email.value.includes("@")))
+{
+    
+    alert("Please Check Your Email");
+    email.focus();
+    
+  
+    return false;
+}
+if( phone.value == "" || !(phone.value.match(phoneno)))
+{
+    alert("Please Check Your Phone No ");
+    phone.focus();
+    return false;
+}
+
+
+}
+
+
+
+
+
 
 
 

@@ -1,0 +1,43 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+
+}
+body{
+    background-color:  #b8ff7d;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu";
+}
+#signup{
+    /* background: transparent; */
+    padding: 10vh;
+    height: 70vh;
+    width: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 15px;
+}
+.signup-heading{
+    text-align: center;
+    font-family: "Kaushan Script",cursive;
+}
+.form-group label {
+    display: inline-block;
+    margin-bottom: 5px;
+
+}
+.form-group input{
+    font-family: inherit;
+}
+ .error input{
+    border: 2px solid red;
+}
+.success input{
+    border: 2px solid rgb(30, 231, 30);
+}
+
