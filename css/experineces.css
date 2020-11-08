@@ -56,7 +56,7 @@ height: 100vh;
         height: fit-content;
     
     }
-    #art .explore-slide,#heritage .explore-slide,#spiritual .explore-slide,#food .explore-slide{
+    #art .explore-slide,#heritage .explore-slide,#spiritual .explore-slide,#food .slide{
         flex-wrap: wrap;
     }
 

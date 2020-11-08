@@ -82,7 +82,7 @@ if( phone.value == "" || !(phone.value.match(phoneno)))
     phone.focus();
     return false;
 }
-
+return true;
 
 }
 
