@@ -14,7 +14,8 @@ body{
     /* background: transparent; */
     padding: 10vh;
     height: 70vh;
-    width: 30%;
+    min-width: 30%;
+    width: fit-content;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -41,3 +42,6 @@ body{
     border: 2px solid rgb(30, 231, 30);
 }
 
+@media screen and (max-width:468px){
+
+}

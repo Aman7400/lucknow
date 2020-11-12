@@ -1,7 +1,7 @@
 .about{
     padding: 15vh ;
     height: fit-content;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
  background-color: #fdff85;
@@ -39,9 +39,14 @@ text-shadow: 2px 2px 4px white;
 .reach-heading h1{
     font-family: "Kaushan Script";
     font-size: 4rem;
+    margin: 10px;
 }
 .reach-cards{
+    margin: 10px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     
 }
 .card{
@@ -88,5 +93,38 @@ background-color: #b8ff7d;
     padding-top: 5vh;
 
     }
+    .reach-heading h1{
+        
+        font-size: 3rem;
+    }
 
+}
+@media screen and (max-width:786px){
+
+    .about{
+       
+        min-height: 80vh;
+        height: fit-content;
+
+        padding: 10vh;
+        padding-top: 15vh;
+        
+    }
+
+}
+@media screen and (max-width:480px){
+    .about{
+        text-align: center;
+        height: 50vh;
+
+        padding: 5vh;
+        padding-top: 15vh;
+        
+    }
+    .about-heading-p{
+        font-size: 1.5rem;
+    }
+    .about-desc{
+        display: none;
+    }
 }

@@ -3,12 +3,6 @@
 var year = document.getElementById("year");
 var currentYear = new Date().getFullYear();
 year.innerHTML=currentYear;
-// alert(currentYear);
-console.log(currentYear);
-
-
-
-
 
 // active Class Js
 
@@ -35,20 +29,27 @@ items.forEach((item) => {
 
 // About Page JS
 
-var btn  = document.getElementById("readMoreAbout");
-btn.addEventListener("click",(e)=>{
 
-    if(btn.innerText === "Read More")
+
+var readAbout  = document.getElementById("readAbout");
+
+console.log(readAbout);
+readAbout.addEventListener("click",(e)=>{
+
+
+    if(readAbout.innerText === "Read More")
     {
-        btn.innerText = "Read Less"
+        readAbout.innerText = "Read Less"
     }
-    else if(btn.innerText === "Read Less"){
-        btn.innerText = "Read More"
+    else if(readAbout.innerText === "Read Less"){
+        readAbout.innerText = "Read More"
     }
 
   
 
 });
+
+
 
 
 // Subscibe Us Validation

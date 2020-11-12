@@ -11,23 +11,18 @@
 }
 .navbar{
     font-family: "Kaushan Script",cursive;
-    height: 10vh;
+    min-height: 10vh;
+    height: fit-content;
     background-color: #fdff85;
 background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
 
-    /* background-image: url("../images/Untitled\ design.svg"); */
-
-
- /* background-color: whitesmoke; */
-   /* /* background-color: #FBDA61; */
-    /* background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%); */
 
     z-index: 2;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .navbar-brand{
-    font-size:2vw;
+    font-size:2rem;
     margin-left: 100px;
     margin-right: 10px;
     font-weight: 400;
@@ -59,7 +54,11 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
 /* Title Section */
 
 .title-section{
-    margin-top:10vh;height: 90vh;display: grid;
+    margin-top:10vh;
+    min-height:100vh;
+    height: auto;
+     
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,12 +69,7 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
     background-attachment: fixed;
     background-position: center;
   
-    /* backdrop-filter: drop-shadow(4px 4px 10px blue); */
-    /* -webkit-backdrop-filter: blur(4px); */
-
-    /* background-color: #FBDA61;
-    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
-     */
+    
 
 
 }
@@ -103,6 +97,7 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
 /* Discover Section */
 
 #Discover{
+    margin-top: 20vh;
     padding-top: 15vh;   height: 100vh;
 
     display: flex;
@@ -126,12 +121,14 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
 .discover-heading p{
     color: gray;
     font-family: "Kaushan Script";
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 
 .destination-slide{
     display: flex;
     padding: 100px 50px;
+    min-height: fit-content;
+    height: auto;
     /* flex-direction: row; */
     justify-content: space-evenly;
     background-color: #b8ff7d;
@@ -141,12 +138,15 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
 .explore-card{
     margin: 10px 10px;
     width: 20rem;
+   
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: transform 0.8s ease-in-out;
 }
 .explore-card:hover{
     transform: scale(1.1);}
+
+   
    
   
   .explore-card  .card-title{
@@ -160,54 +160,35 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
     }
     .card-img-top{
         width: 100%;
-        height:12rem;
+        max-width: 100%;
+        height:auto;
+        
     }
 
+ 
 
 
 
 
 
-/* 
-.discover-cards{
 
-    display: flex;
-    width: 100%;
-    
-    /* flex-direction: row; 
-
-
-  .explore-card  .card a { 
-        color: #784BA0;
-        font-weight: 400;
-        text-shadow: 1px 1px 2px #784BA0;
-        text-decoration: none;
-
-    }
-.card-img-top{
-    width: 100%;
-    height:12rem;
-}
-
-
-
-     */
+   
 
 
 
 /* Experiences */
 
 #Experiences{
-    padding: 15vh;
-    padding-top: 20vh;
+    margin-top: 10vh;
+    padding:10rem 5rem;
+    
  
-    min-height: 100vh;
+    min-height: 110vh;
     height:fit-content;
-    /* background-color: #fdff85;
-    background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
-     */
+   
      display: flex;
     justify-content: center;
+    align-items: center;
 }
 .experiences-heading{
     display: flex;
@@ -228,6 +209,8 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
   text-shadow: 2px 2px 4px black;
   font-family: "Kaushan Script",cursive;
   font-size: 2rem;
+  margin: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 
@@ -257,6 +240,7 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
 .experiences-card-body{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background: whitesmoke;
 }
 .experiences-card-body div img{
@@ -292,11 +276,15 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
     background-color: #b8ff7d;
   
 }
-.contact {
+.contact-text {
     margin-bottom: 10px;
-
+font-size: 2rem;
     font-family: "Ubuntu";
 }
+.subscribe-btn{
+    border-radius: 35px;padding: 5px 15px;
+}
+
 .fa{
     margin: 5px;
     margin-bottom: 20px;
@@ -328,26 +316,99 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
 /* Media Queries */
 
 @media screen and (max-width:1200px){
+    /* Title  */
+    .navbar-brand{
+        margin: 1rem;
+    }
+    .navbar-nav{
+        margin: 1rem;
+    }
+    .nav-link{
+        font-size: 1.53rem;
+
+    }
         #landing-img {
             width: 180%;
         }
+
+
+        /* Must Visit */
         #Discover{
             height: auto;
         }
-        .discover-cards{
+        
+        #Discover{
+            height: auto;
+        }
+        
+      
+        .explore-card  .card-text{
+            display: none;
+        }
+        .explore-card  .card-text{
+            display: none;
+        }
+        .explore-card:hover       
+        {
+            
+            transform: none;
+            
+        }
+        #discover-heading{
+            font-size: 2rem;
+        }
+        .discover-heading p{
+            font-size: 1.5rem;
+        }
+        .destination-slide {
+            
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .destination-slide .explore-card{
+            width: 25rem;
+        }
+
+        /* Experiences */
+
+        #Experiences{
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
         }
         .experiences-card-body{
             flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
-        .experiences-card-p{
-            display: none;
+        .experiences-heading{
+            text-align: center;
         }
-        #Experiences{
-            flex-direction: column;
-            justify-content: space-around;
+        .experiences-card{
+            display: flex;
+            text-align: center;
         }
+        .experiences-card-h2 a{
+            font-size: 2.3rem;
+        }
+
+
+        /* Footer */
+         
+
+         #Contact{
+            
+            height: fit-content;
+            padding: 5vh;
+         }
+
+         .contact-text{
+            text-align: center;
+            font-size: 1rem;
+        }
+       
+
        
       
     }
@@ -357,10 +418,10 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
             height: auto;
         }
         .navbar-brand{
-            font-size: 4vw;  
+            font-size: 1.8rem;  
         margin: 0;      }
         .nav-link{
-            font-size: 2.5vw;}
+            font-size: 1.5rem;}
         
         #title h1{
             font-size: 10vh;
@@ -369,17 +430,122 @@ background-image: linear-gradient(90deg, #fdff85 0%, #b8ff7d 100%);
             font-size: 5vh;
         }
        
-        .experiences-card-body{
-            flex-direction: column;
-            justify-content: center;
-        }
+       /* Must Visit */
+       #discover-heading{
+        font-size: 3rem;
+    }
+  
+
+       .destination-slide{
+        flex-wrap: wrap;
+        padding: 2rem;
         
-        #Contact{
-height: fit-content;
-padding: 5vh;
+    }
+    .destination-slide .explore-card{
+        width: 20rem;
+    }
+    .explore-card:hover
+        {
+           
+            transform: none;
         }
-        .explore-card .card-body{
+
+        
+
+
+        /* Experience Section */
+        #Experiences{
+            padding: 5rem 3rem;
+            justify-content: center;
+            align-items: center;
+        }
+        .experiences-heading h1{
+            font-size: 3rem;
+
+        }
+        .experiences-heading h3{
+            font-size: 2rem;
+            /* padding: 5px; */
+            
+        }
+        .experiences-card-h2 a{
+            font-size: 1.3rem;
+        }
+        .experiences-card-p{
             display: none;
         }
+       
+    
+         /* Foooter */
+
+         #Contact{
+            
+            height: fit-content;
+            padding: 5vh;
+         }
+
+         .contact-text{
+            text-align: center;
+            font-size: 1rem;
+        }
+       
         
+    }
+
+    @media screen and (max-width:480px)
+    {
+        /* Must Visit */
+       
+
+        #discover-heading{
+            font-size: 3rem;
+        }
+        .destination-slide .explore-card{
+            width: 18rem;
+        }
+      
+        .explore-card .card-body{
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .explore-card  .card-text a{
+            display: block;
+        }
+        .explore-card  .card-text{
+            display: none;
+        }
+
+
+        /* Experiences */
+
+        #Experiences{
+            padding: 2rem 0.5rem;
+            justify-content: center;
+            align-items: center;
+        }
+        .experiences-section{
+            width: 80vw;
+        }
+        .experiences-heading{
+            margin-top: 5rem;
+            justify-content: center;
+            align-items: center;
+        }
+        .experiences-heading h1{
+
+            font-size: 2rem;
+        }
+        .experiences-card-h2{
+            text-align: center;
+        }
+        .experiences-card-h2 a{
+            font-size: 1rem;
+        }
+        
+
+       
+
     }
